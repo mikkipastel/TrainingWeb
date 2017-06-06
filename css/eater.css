@@ -10,16 +10,24 @@
 }
 .eater-top-holder{
   transform-origin: bottom left;
+  animation-name: animated-eater-top;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 .eater-bottom-holder{
   top: 50%;
   transform-origin: top left;
+  animation-name: animated-eater-bottom;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 @keyframes animated-eater-top{
-
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(-20deg);}
 }
 @keyframes animated-eater-bottom{
-
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(5deg);}
 }
 .eater-top{
   width: 100%;
